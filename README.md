@@ -1,6 +1,3 @@
-The link-site project has been moved and can be found [here](https://github.com/link-international/link_site).
-
-
 # Link International
 Link International is Australia's leading motorcycle parts importer and distributor; this is the repository for linkint.com.au.
 
