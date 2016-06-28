@@ -22,6 +22,8 @@ $(document).ready(function () {
 		autoplaySpeed: 5000,
 		adaptiveHeight: true,
 		dots: false,
+		slidesToShow: 3,
+  	slidesToScroll: 1,
 		infinite: true,
 		pauseOnHover: true,
 		speed: 700,

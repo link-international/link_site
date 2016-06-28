@@ -688,8 +688,11 @@ FOR EXAMPLE, on the motul page create an area with
 					img {
 						max-height: rem-calc(350);
 					}
-					img.magazine-ads {
-						max-height: rem-calc(1000);
+					&.magazine-ads {
+						padding: 0 0.5rem;
+						img {
+							max-height: rem-calc(1000);
+						}
 					}
 				}
 			}
