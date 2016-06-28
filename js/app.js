@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	
 	$(document).foundation({
 		equalizer: {
@@ -17,8 +17,21 @@ $(document).ready(function(){
 		nextArrow: "<i class='fa fa-arrow-right'></i>"
 	});
 	
+	$('.magazine-slider').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
+		adaptiveHeight: true,
+		dots: false,
+		infinite: true,
+		pauseOnHover: true,
+		speed: 700,
+		appendArrows: $(".slick-arrow-box"),
+		prevArrow: "<i class='fa fa-arrow-left'></i>",
+		nextArrow: "<i class='fa fa-arrow-right'></i>"
+	});
+	
 	// Causes the model-search-tip to appear when a user selects a Make
-	$('.make-search-element > select' ).bind('change', function() {
+	$('.make-search-element > select').bind('change', function () {
 		$('.model-search-tip').show();
 		$('.model-search-form').addClass('model-search-form-active');
 	});

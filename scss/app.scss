@@ -686,7 +686,10 @@ FOR EXAMPLE, on the motul page create an area with
 						width: 62.5rem;
 					}
 					img {
-							max-height: rem-calc(350);
+						max-height: rem-calc(350);
+					}
+					img.magazine-ads {
+						max-height: rem-calc(1000);
 					}
 				}
 			}
