@@ -1,0 +1,10 @@
+Category Code,Parent Category Code,Category Tree,Name,Description,Keywords
+promo-caps,promo-store,promo-store,Caps,Caps,Motorcycle Caps Motul Pirelli Arrow
+promo-apparel,promo-store,promo-store,Apparel,Apparel/Clothing,Motorcycle Apparel Clothing Motul Pirelli Arrow Shirts Jackets
+promo-shirts,promo-apparel,promo-store,Shirts,Shirts,Motorcycle Apparel Clothing Motul Pirelli Arrow Shirts
+promo-shirts-motul,promo-shirts,promo-store,Motul Shirts,Motul Shirts,Motorcycle Apparel Clothing Motul Shirts
+promo-shirts-pirelli,promo-shirts,promo-store,Pirelli Shirts,Pirelli Shirts,Motorcycle Apparel Clothing Pirelli Shirts
+promo-shirts-arrow,promo-shirts,promo-store,Arrow Shirts,Arrow Shirts,Motorcycle Apparel Clothing Arrow Shirts
+promo-jackets,promo-apparel,promo-store,Jackets,Jackets,Motorcycle Apparel Clothing Motul Pirelli Arrow Jackets
+promo-misc,promo-store,promo-store,Miscellaneous,Miscellaneous,Motorcycle Miscellaneous Lanyards Keyrings Accessories
+promo-stickers,promo-store,promo-store,Stickers,Stickers,Motorcycle Stickers Motul Pirelli Arrow
