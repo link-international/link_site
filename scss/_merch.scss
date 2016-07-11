@@ -1,0 +1,49 @@
+$color-stock-high: #00A681;
+$color-stock-low: #FFBA00;
+$color-stock-none: #CB005B;
+
+.merch-store.product-listing {
+	.product-listing-code {
+		word-wrap: break-word;
+	}
+	.product-listing-img {
+		margin-bottom: 1rem;
+		img {
+			@extend .global-border;
+		}
+	}
+	.product-listing-price {
+		color: $col-link;
+	}
+	.product-listing-qty-input {
+		input {
+			@extend .width-100;
+		}
+	}
+	.product-listing-add-btn {
+		a.button {
+			@extend .width-100;
+		}
+	}
+	.product-listing-fav {
+		&.product_favourite_Y {
+			.add-fav {display: none;}
+			.remove-fav {}
+		}
+		&.product_favourite_N {
+			.remove-fav {display: none;}
+			.add-fav {}
+		}
+	}
+	.product-listing-stock {
+		.stock-high i {
+			color: $color-stock-high;
+		}
+		.stock-low i {
+			color: $color-stock-low;
+		}
+		.stock-none i {
+			color: $color-stock-none;
+		}
+	}
+}
