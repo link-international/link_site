@@ -1,0 +1,27 @@
+<!--RECORD-->
+<div class="small-12 medium-4 large-4 columns">
+	<div class="row">
+		<div class="small-12 columns product-listing-img">
+			<a href="$item_link$"><img alt="$_P_Name$" src="http://$SYS_system_attachments_url$/products/images_large/$_P_Image$" /></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<h5 style="font-weight:bold;">$_P_Name$ &raquo;</h5>
+			<p style="margin-bottom:0px;"><strong>Product Code:</strong> $_P_ProductID$</p>
+			<p style="margin-bottom:0px;"><strong>Unit:</strong> $_P_Unit$</p>
+		</div>
+		<div class="small-8 columns">
+			<h5 class="product-listing-price" style="font-weight:bold;">$SES_locale_currency_symbol$$_P_RRPriceIncProjectCurrency$</h5>
+		</div>
+		<div class="small-2 columns product-listing-fav $favourites_product_class$"><!--.totecs-fav-class-->
+			<a class="add-fav" onclick="$favourites_product_add_onclick$" href="#"><i class="fa fa-heart-o"></i></a>
+			<a class="remove-fav" onclick="$favourites_product_remove_onclick$" href="#"><i class="fa fa-heart"></i></a>
+		</div>
+		<div class="small-2 columns product-listing-stock">
+			<span class="stock-high"><i class="fa fa-circle"></i></span>
+		</div>
+		<div class="small-6 columns product-listing-qty-input"><input type="text"></div>
+		<div class="small-6 columns product-listing-add-btn"><a href="#" class="button tiny width-100">Add</a></div>
+	</div>
+</div>
