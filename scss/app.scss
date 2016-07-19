@@ -258,9 +258,11 @@ $fon-size-normal: rem-calc(14);
 		cursor: pointer;
 	}
 }
-
-ul.disc {
-	list-style-type: disc!important;
+ul {
+	list-style-type: none !important;
+	&.disc {
+		list-style-type: disc!important;
+	}
 }
 
 // Updating area styling
@@ -292,9 +294,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-ul {
-	list-style-type: none !important;
-}
+
 
 .main-wrapper {
 	margin:0;
@@ -303,7 +303,11 @@ ul {
 	background: #f7f7f7;
 }
 
-// Navigation
+/************************
+* NAVIGATION
+************************/
+
+
 #page-navigation {
 	.top-bar {
 		// The 'Menu' text and burger icon for mobile
@@ -367,16 +371,6 @@ ul {
 	}
 }
 
-// LOGIN / REGISTER
-.registration-box {
-	font {
-		display: none;
-	}
-	.input {
-		@extend .button;
-		width: 100%;
-	}
-}
 
 /*
 This is the side navigation for all the product pages
@@ -399,15 +393,15 @@ FOR EXAMPLE, on the motul page create an area with
 	}
 }
 
-.model-search-form-active {
-	@include breakpoint(large) {
-		height: 7.6rem !important;
-		transition: 0.5s;
-	}
-}
 
-// Select Your Bike
+
+/************************
+* SELECT YOUR BIKE
+************************/
+
 .page-search-bike {
+	// This class is added by JS, from an event listener on the make select box
+	// It causes the .model-search-form to increase height and show the .model-search-tip 
 	background-color: $col-link;
 	@media #{$medium-and-up} {
 		padding: rem-calc(32 0);
@@ -455,8 +449,17 @@ FOR EXAMPLE, on the motul page create an area with
 			}
 		}
 	}
+	&.model-search-form-active {
+		@include breakpoint(large) {
+			height: 7.6rem !important;
+			transition: 0.5s;
+		}
+	}
 }
-// Find Your Parts
+
+/************************
+* FIND YOUR PARTS
+************************/
 .page-search-products {
 	padding-bottom: 0px;
 	@media #{$medium-and-up} {
@@ -464,7 +467,7 @@ FOR EXAMPLE, on the motul page create an area with
 	}
 	margin-bottom: 0px;
 }
-// Getting rid of the hideous xsqit formatting
+// Overwriting xsqit formatting
 #partssearchform {
 	table {
 		background: none;
@@ -480,7 +483,64 @@ FOR EXAMPLE, on the motul page create an area with
 	}
 }
 
-// HOME PAGE FEATURE PRODUCTS
+
+
+
+// LOGIN / REGISTER
+.registration-box {
+	font {
+		display: none;
+	}
+	.input {
+		@extend .button;
+		width: 100%;
+	}
+}
+
+
+/************************
+* SLIDER
+************************/
+
+.slider-bg {
+	width:100%;
+	margin: 1rem 0;
+	.slider-container {
+		.slick-slider {
+			div {
+				.slide-box {
+					@include breakpoint(large) {
+						width: 62.5rem;
+					}
+					img {
+						max-height: rem-calc(350);
+					}
+					&.magazine-ads {
+						padding: 0 0.5rem;
+						img {
+							max-height: rem-calc(1000);
+						}
+					}
+				}
+			}
+		}
+	}
+	.slick-arrow-box {
+		i.fa {
+			margin:1rem 1rem 0;
+			cursor: pointer;
+			&:hover {
+				color: scale-color($col-dark, $lightness: -10%);
+			}
+		}
+	}
+}
+
+
+/************************
+* HOME FEATURE PRODUCTS
+************************/
+
 .feature-products {
 	.feature-product-container {
 		padding: 1rem;
@@ -676,39 +736,7 @@ FOR EXAMPLE, on the motul page create an area with
 	}
 }
 
-.slider-bg {
-	width:100%;
-	margin: 1rem 0;
-	.slider-container {
-		.slick-slider {
-			div {
-				.slide-box {
-					@include breakpoint(large) {
-						width: 62.5rem;
-					}
-					img {
-						max-height: rem-calc(350);
-					}
-					&.magazine-ads {
-						padding: 0 0.5rem;
-						img {
-							max-height: rem-calc(1000);
-						}
-					}
-				}
-			}
-		}
-	}
-	.slick-arrow-box {
-		i.fa {
-			margin:1rem 1rem 0;
-			cursor: pointer;
-			&:hover {
-				color: scale-color($col-dark, $lightness: -10%);
-			}
-		}
-	}
-}
+
 
 // PUTS A BOTTOM BORDER ON THE MODEL PRODUCT ACCORDION ELEMENTS
 .model-product-accordion {
@@ -927,6 +955,10 @@ FOR EXAMPLE, on the motul page create an area with
 	font-weight: bold;
 }
 
+/************************
+* FAQ'S
+************************/
+
 .accordion {
 	margin-left: 0!important;
 	.acc-faq {
@@ -985,7 +1017,11 @@ FOR EXAMPLE, on the motul page create an area with
 	text-rendering: optimizeLegibility;
 }
 
-// FOOTER TEXT FORMATTING
+
+/************************
+* FOOTER
+************************/
+
 .footer, .footer p {
   color: #555555;
   font-size: 10px;
@@ -1000,18 +1036,6 @@ FOR EXAMPLE, on the motul page create an area with
 	padding: 2rem 0 1rem 0;
 }
 
-// Make listing in footer
-//.make-listing-button {
-//	a {
-//		padding: rem-calc(8) rem-calc(16) rem-calc(10)!important;
-//		text-align: center;
-//		small {
-//			@extend .footer;
-//			@extend .pasred;
-//		}
-//	}
-//	#make-listing-panel {
-//		margin-bottom: rem-calc(8);
 ul.format_make_listing {
 	li {
 		display: inline-table;
@@ -1029,10 +1053,11 @@ ul.format_make_listing {
 		}
 	}
 }
-//	}
-//}
 
-//SITEMAP
+/************************
+* SITEMAP
+************************/
+
 table.cms_sitemap {
 	@extend .width-100;
 }
@@ -1231,8 +1256,6 @@ table.cms_sitemap {
 	}
 }
 
-
-// The chicken schnitzel works burger is overkill.
 
 .fitment-loading {
 	&:before {
