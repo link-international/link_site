@@ -119,3 +119,62 @@
 		}
 	);
 </script>
+
+
+
+
+<!-- CMC -->
+<script language="JavaScript" type="text/javascript">
+	$(document).ready(function() {
+		$('#fitment-table').dataTable( {
+			"lengthChange": false,
+			"pageLength": 15,
+			"fnPreDrawCallback": function() {
+				$('#fitment-table').addClass("fitment-loading");
+			},
+			"fnDrawCallback": function() {
+				$('#fitment-table').removeClass("fitment-loading");
+			},
+			"language": {
+				"search": '_INPUT_',
+				"searchPlaceholder": "Model name, CC's, year, etc...",
+				"infoFiltered": ""
+			},
+			"dom": '<"row quick-wildcard"<"small-12 medium-4 columns wildcard-text"><"small-12 medium-8 columns"f>>'+
+			't'+
+			'<"row"<"small-6 columns"ir><"small-6 columns"p>>',
+			"renderer": 'foundation'
+		});
+		$("div.wildcard-text").html('<h4>Refine Your Results</h4>');
+	});
+	TOTECS.retail.loader.loadFunction(
+		function(){
+			/* Make Model search datatable */
+			var initDataTable = function(type, args, me){
+				$('#fitment-table').dataTable( {
+					"lengthChange": false,
+					"pageLength": 15,
+					"fnPreDrawCallback": function() {
+						$('#fitment-table').addClass("fitment-loading");
+					},
+					"fnDrawCallback": function() {
+						$('#fitment-table').removeClass("fitment-loading");
+					},
+					"language": {
+						"search": '_INPUT_',
+						"searchPlaceholder": "Model name, CC's, year, etc...",
+						"infoFiltered": ""
+					},
+					"dom": '<"row quick-wildcard"<"small-12 medium-4 columns wildcard-text"><"small-12 medium-8 columns"f>>'+
+					't'+
+					'<"row"<"small-6 columns"ir><"small-6 columns"p>>',
+					"renderer": 'foundation'
+				});
+				$("div.wildcard-text").html('<h4>Refine Your Results</h4>');
+				TOTECS.retail.fs.removeAreaEventListener(4);
+			};
+			/* Make Model search datatable */
+			TOTECS.retail.fs.addAreaEventListener(12512, TOTECS.retail.fs.WEBPAGE_AREA_EVENT_TYPES.AFTER_AREA_RELOAD, initDataTable, 4, '');
+		}
+	);
+</script>
