@@ -1318,8 +1318,10 @@ table.cms_sitemap {
 		overflow-x: hidden;
 		overflow-y: scroll;
 		display: block;
-		li {
-			a {
+		td {
+			a, a p {
+				color: $col-dark-font;
+				font-size: small!important;
 				i {
 					color: $col-link;
 				}
