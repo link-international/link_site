@@ -1122,6 +1122,9 @@ table.cms_sitemap {
 			}
 		}
 	}
+	.product_details_image_list_imageviewer li {
+  	display: inline-block;
+	}
 	.prode-zoom {
 		text-align: left;
 		color: $col-grey-1;
