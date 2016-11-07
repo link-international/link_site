@@ -43,4 +43,8 @@ $(document).ready(function () {
 	} else {
 		$('.combo-display').hide();
 	}
+	
+	//Automatically ticks receive marketing box
+	$('input[name=receivemarketing]').attr('checked', true);
+	
 });
