@@ -1,3 +1,94 @@
+<hr>
+<div class="row">
+	<!-- This is the image box -->
+	<div class="small-12 medium-7 columns">
+		<div class="prode-data-placeholder">
+			<div class="row">
+				<div class="prode-data-points small-12 large-12 columns">
+					<h3 class="always-h3">$_P_DescriptionHolder$</h3>
+					<div class="addthis_native_toolbox"></div>
+					<h4>$SES_locale_currency_symbol$$combinations_item_price$ $_P_Unit$</h4>
+
+					<table class="prode-data-table">
+						<tr>
+							<td><strong>Part No:</strong></td>
+							<td class="prode-itemID">$_P_ItemIDHolder$</td>
+						</tr>
+						<tr>
+							<td><strong>Stock:</strong></td>
+							<td class="prode-stock-$_P_StockLevel$">
+								<span class="prode-stock-text-high">In stock</span>
+								<span class="prode-stock-text-low">Stock is running low, get in quick.</span>
+								<span class="prode-stock-text-none">It looks like we're out. Contact us to find out next stock availability.</span>
+							</td>
+						</tr>
+<!--
+						<tr>
+							<td colspan="2">
+								<div class="prode-add-to-cart">
+										<div id="$favourites_product_wrapper_element_id$" class="$favourites_product_class$"> 
+											<a href="#" class="add_favourite_btn" onclick="$favourites_product_add_onclick$ return false;"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 
+											<a href="#" class="remove_favourite_btn" onclick="$favourites_product_remove_onclick$ return false;"><i class="fa fa-heart" aria-hidden="true"></i></a> 
+										</div>
+								</div>
+							</td>
+						</tr>
+-->
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small-12 medium-5 columns">
+		<div class="image-placeholder" style="border-left:1px solid #ddd">
+			<div class="image-placeholder-img" style="border-bottom:1px solid #ddd">$productImage_placeholder$</div>
+			$productImage_list$
+		</div>
+	</div>
+	
+	<!-- This is the main info, item name, part no, price, etc -->
+	<div class="small-12 large-12 columns">
+		<div class="prode-data-placeholder">
+			<div class="row">
+				<div class="combo-display prode-data-points small-12 columns">
+					<h4 class="prode-header">Options &nbsp;<i class="fa fa-cogs"></i></h4>
+					<div class="prode-combo-box">
+						$combinations_table$$combination_selection_label$
+					</div>
+				</div>
+				
+				<div class="combo-display hide-for-large-up small-12 columns">
+					<hr>
+				</div>
+				
+				<div class="small-12 columns">
+					<h4 class="prode-header">Information & Specifications &nbsp;<i class="fa fa-info-circle"></i></h4>
+					<div>
+						$_P_Description2Holder$
+					</div>
+				</div>
+				
+				<div class="small-12 columns">
+					$_P_Description3$
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
+		display: inline; 
+	} 
+	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
+		display: none; 
+	}
+</style>
+
+<!----------------------------------->
+
+
+
 <div class="row">
 	<!-- This is the image box -->
 	<div class="small-12 large-12 columns">
@@ -34,7 +125,10 @@
 						<tr>
 							<td colspan="2">
 								<div class="prode-add-to-cart">
-									$addProductQuantityField$ <a class="button tiny" href="#" onclick="$addProduct_onclick$" style="margin-bottom: 0px;">Add <i class="fa fa-shopping-cart"></i></a>
+										<div id="$favourites_product_wrapper_element_id$" class="$favourites_product_class$"> 
+											<a href="#" class="add_favourite_btn" onclick="$favourites_product_add_onclick$ return false;"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 
+											<a href="#" class="remove_favourite_btn" onclick="$favourites_product_remove_onclick$ return false;"><i class="fa fa-heart" aria-hidden="true"></i></a> 
+										</div>
 								</div>
 							</td>
 						</tr>
@@ -67,9 +161,23 @@
 	</div>
 </div>
 
+<style type="text/css">
+	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
+		display: inline; 
+	} 
+	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
+		display: none; 
+	}
+</style>
+	
+	
+	
+	
+		
 
-		
-		
+
+
+
 		
 		
 			<ul class="tabs" data-tab>
