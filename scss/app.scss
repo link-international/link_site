@@ -1092,6 +1092,8 @@ table.cms_sitemap {
   border: 0;
   margin-bottom: rem-calc(20);
   padding: rem-calc(5);
+	max-height: rem-calc(400);
+	border-left:1px solid #ddd;
 	.product_details_image_list_placeholder {
 		margin: 0!important;
 		li {
