@@ -47,4 +47,9 @@ $(document).ready(function () {
 	//Automatically ticks receive marketing box
 	$('input[name=receivemarketing]').attr('checked', true);
 	
+	//if there is only one child element, img thumbnails hide()
+//	if ($(".image-thumbnails.whatever-tot-element").children == 1) {
+//		$(".image-thumbnails").hide();
+//	}
+	
 });
