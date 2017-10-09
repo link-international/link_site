@@ -819,21 +819,21 @@ FOR EXAMPLE, on the motul page create an area with
 				white-space: nowrap;
 			}
 		}
-		.prode-stock-high {
+		.prode-stock-high, .product_stock_level_high {
 			@extend .green;
-			.prode-stock-text-none, .prode-stock-text-low {
+			.prode-stock-text-none, .product_stock_level_none, .prode-stock-text-low, .product_stock_level_low {
 				display: none;
 			}
 		}
-		.prode-stock-low {
+		.prode-stock-low, .product_stock_level_low {
 			@extend .orange;
-			.prode-stock-text-none, .prode-stock-text-high {
+			.prode-stock-text-none, .product_stock_level_none, .prode-stock-text-high, .product_stock_level_high {
 				display: none;
 			}
 		}
-		.prode-stock-none {
+		.prode-stock-none, .product_stock_level_none {
 			@extend .pasred;
-			.prode-stock-text-low, .prode-stock-text-high {
+			.prode-stock-text-low, .product_stock_level_low, .prode-stock-text-high, product_stock_level_high {
 				display: none;
 			}
 		}
@@ -1189,21 +1189,21 @@ table.cms_sitemap {
 //				@extend h4;
 				color: #000!important;
 			}
-			.prode-stock-high {
+			.prode-stock-high, .product_stock_level_high {
 				@extend .green;
-				.prode-stock-text-none, .prode-stock-text-low {
+				.prode-stock-text-none, .product_stock_level_none, .prode-stock-text-low, .product_stock_level_low {
 					display: none;
 				}
 			}
-			.prode-stock-low {
+			.prode-stock-low, .product_stock_level_low {
 				@extend .orange;
-				.prode-stock-text-none, .prode-stock-text-high {
+				.prode-stock-text-none, .product_stock_level_none, .prode-stock-text-high, .product_stock_level_high {
 					display: none;
 				}
 			}
-			.prode-stock-none {
+			.prode-stock-none, .product_stock_level_none {
 				@extend .pasred;
-				.prode-stock-text-low, .prode-stock-text-high {
+				.prode-stock-text-low, .product_stock_level_low, .prode-stock-text-high, .product_stock_level_high {
 					display: none;
 				}
 			}
