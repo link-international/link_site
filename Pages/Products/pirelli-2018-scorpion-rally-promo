@@ -1,0 +1,681 @@
+<style type="text/css">body {cursor: pointer}
+
+ .esiteretarea { 
+  display: none; 
+  visibility: hidden; 
+  } 
+  .round-img { 
+  border-radius: 50%; 
+  margin-top: 20px; 
+  } 
+  .macna-1 { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Pirelli%20Scorpion%20Rally%20STR%20Background.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:520px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+    
+  .macna-scope{ 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Up%20Close.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+    
+  .macna-traction{ 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(26).jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+  .macna-frequence{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-frequence-jackets-1.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+    
+  .macna-atom{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/manca-atom-heated-gloves-banner.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+    
+  .macna-vest{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-heated-vest.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+  .macna-talon{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-talon-glove-feature.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+  .macna-vortex{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-vortex-feature.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 300%; 
+  margin-left: -100%; 
+  margin-right: -100%; 
+  } 
+    
+  @media only screen and (max-width : 768px) { 
+  .macna-sub { 
+  text-align: center; 
+  font-size: 15px !important; 
+  margin-bottom:-10px; 
+  } 
+  .macna-1 { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Pirelli%20Scorpion%20Rally%20STR%20Background.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  height:420px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+    
+  .macna-scope{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/MACNA-SCOPE-JACKET.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+    
+  } 
+    
+  .macna-traction{ 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(26).jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+  .macna-frequence{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-frequence-jackets-1.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+  .macna-atom{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/manca-atom-heated-gloves-banner.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+  .macna-vest{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-heated-vest.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+  .macna-talon{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-talon-glove-feature.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+  .macna-vortex{ 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-vortex-feature.jpg")no-repeat center center; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height:300px; 
+  width: 100%; 
+  margin: auto; 
+  } 
+    
+  } 
+    
+  .macna-overlay { 
+  background-color: rgba(148, 148, 148, 0.4); 
+  height:520px; 
+  width: 100%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center; 
+  } 
+    
+  .macna-overlay img{ 
+  margin-top: 50px; 
+  max-width:100%; 
+  } 
+    
+  .features-mac img { 
+  border-radius: 50%; 
+  margin-top:30px; 
+  } 
+    
+    
+    
+  .macna-sub { 
+  text-align: center; 
+  font-size: 25px; 
+  margin-bottom:-10px; 
+  } 
+    
+  .brand-name { 
+  color: #D12828; 
+  text-transform: uppercase; 
+  font-size: 35px; 
+  font-weight: 800; 
+  margin-bottom: 0px ! important; 
+  } 
+    
+  .product-name { 
+  color: #000; 
+  text-transform: uppercase; 
+  font-size: 35px; 
+  margin-top: -15px !important; 
+  } 
+    
+    
+  .bullets { 
+  list-style-image: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/bullet-point.png"); 
+  font-size: 20px; 
+  line-height: 1.5em; 
+  } 
+    
+  .bullets li { 
+  padding-left: 10px; 
+  } 
+    
+  .macna-price { 
+  font-size: 25px; 
+  margin-bottom: 10px !important; 
+  margin-top: -10px !important; 
+  } 
+    
+  .macna-rrp { 
+  color: #D12828; 
+  } 
+    
+  .macna-cta { 
+  background-color:#D12828; 
+  color: #fff; 
+  font-size: 15px; 
+  padding: 15px; 
+  text-transform: uppercase; 
+  } 
+    
+  .macna-thumbs{ transition: all .2s ease-in-out; } 
+  .macna-thumbs:hover { transform: scale(1.3); } 
+    
+  .slider-overlay { 
+  color: #fff !important; 
+  padding-top: 0px; 
+  text-transform: uppercase; 
+  font-size: 30px; 
+  font-weight: bold; 
+  max-width: 100%; 
+  } 
+    
+  i { 
+  border: solid white; 
+  border-width: 0 3px 3px 0; 
+  display: inline-block; 
+  padding: 13px; 
+  } 
+    
+  .down { 
+  transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg); 
+  } 
+    
+  /*PRODUCTS*/ 
+  .vosges-jacket { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Corsa%202%20Tyres-transparent.png")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .vosges-jacket:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Diablo%20Corsa%202%20side-transparent.png")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+    
+  .scope-jacket { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Diablo%20Corsa%202%20Ambiance%20Shot.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .scope-jacket:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/Ambience%20on%20road%20(1).jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+    
+  .traction-jacket-black { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Five%20Compound%20Zones.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .traction-jacket-black:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Three%20Compound%20Zones.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+    
+  .traction-jacket-yellow { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Slick%20Shoulder%20Design.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .traction-jacket-yellow:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Excellent%20Chemical%20Grip.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+    
+  .traction-jacket-orange { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Tread%20Pattern.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .traction-jacket-orange:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Lyocell%20Fibre%20Casing.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+   
+.traction-jacket-blue { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Tread%20Pattern.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .traction-jacket-blue:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/brand-pirelli/ROSSO%20CORSA%202%20-%20Lyocell%20Fibre%20Casing.jpg")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  }  
+    
+  .frequence-jacket { 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-frequency-red-front.png")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  } 
+    
+  .frequence-jacket:hover { 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-frequency-red-back.png")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  } 
+    
+  .atom-glove { 
+  background: url("http://www.linkint.com.au/libraries/images/macna%20landing%20page/macna-atom-glove.png")no-repeat center center; 
+  width:100%; 
+  background-size: contain; 
+  -webkit-transform: translate3d(0,0,0); 
+  -moz-transform: translate3d(0,0,0); 
+  transform: translate3d(0,0,0); 
+  transition-duration: .3s; 
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(.7,1,.7,1); 
+  }
+</style>
+<div class="row">
+<div class="large-12 columns">
+<div class="macna-1">
+<div class="macna-overlay"><img alt="macna logo" src="http://www.linkint.com.au/libraries/images/brand-pirelli/Pirelli%20Scorpion%20Rally%20STR%20Promo%20Logo.png" /></div>
+</div>
+</div>
+</div>
+
+<p><br />
+<!--VOSGES JACKET--></p>
+
+<p>Purchase a pair of Pirelli Scorpion Rally STR tyres from June 1st to  receive 
+1 FREE Rigg Gear15 litre Dry Roll Bag in either Yellow or Black, valued at $109.
+100 bags only, promotion lasts until sold out.</p>
+
+<div class="medium-6 columns">
+<div class="row">
+<div class="small-12 columns">
+<div class="vosges-jacket"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/MACNA-VOSGES-JACKET-front.png" style="visibility: hidden;" /></div>
+</div>
+
+<div class="row">
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Diablo%20Corsa%202%20-%20front.jpg" /></div>
+
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Diablo%20Corsa%202%20-%20Isometric%20Side.jpg" /></div>
+
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Diablo%20Corsa%202%20Lateral.jpg" /></div>
+</div>
+</div>
+</div>
+
+<div class="medium-6 columns">
+<p class="brand-name">Pirelli</p>
+
+<p class="product-name">DIABLO ROSSO CORSA II</p>
+
+<p class="macna-price"><span class="macna-rrp">RRP:</span> Front : $239.00<br />
+Rear starting from $329.00</p>
+
+<p>*AVAILABLE JULY 2018</p>
+
+<p>&nbsp;</p>
+
+<ul class="bullets">
+	<li>Excellent grip under all conditions and all lean angles giving the rider a sense of increased safety both on road and track and in dry and wet conditions. Consistent performance and up to 20% more mileage.</li>
+	<li>Greater agility enabling precise corner trajectory and enhanced feeling at all lean angles.</li>
+	<li>Improved asphalt contact area for enhanced grip and uniform wear, combined with optimal water drainage on wet surfaces.</li>
+</ul>
+<button class="macna-cta">VIEW PRODUCT RANGE</button></div>
+</div>
+
+<p><br />
+<!--Macna Scope Black Jacket--></p>
+
+<div class="row">
+<div class="large-12 columns">
+<div class="macna-scope">
+<div class="macna-overlay">
+<p class="slider-overlay">DIABLO ROSSO CORSA II FEATURES</p>
+
+<p style="color:#D12828; margin-top:-10px;">MULTI COMPOUND TECHNOLOGY</p>
+</div>
+</div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>The Racing Street tyre sector has been in constant evolution, adapting to the ever-changing demands of the latest power outputs, riding modes and traction control systems. The demands of riders are also evolving, now wanting sports-grade performance and versatility, whether riding on winding roads or the racetrack.</p>
+
+<p>To meet these requirements, Pirelli engineers have developed a new solution - DIABLO ROSSO&trade; CORSA II, using different compounds, specifically positioned across the tyre profile. For the first time, Pirelli has designed a bi-compound solution for the front tyre &mdash; applying the two compounds in three different zones and a triple compound on the rear distributed in five zones.</p>
+
+<p>With this unique design, the Pirelli DIABLO ROSSO&trade; CORSA II has succeeded in blending two and three compounds. The front tyre has a high concentration of 100% Silica in the centre and 100% Carbon Black at the shoulders, thus maximizing grip at all lean angles and in all weather conditions.</p>
+
+<p>For the rear tyre, a new combination of compounds has been developed for road and racetrack use. The rear tyre is divided into five zones with three different compounds used to provide the best performance in all environments.</p>
+
+<div class="row">
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-black"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-yellow"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-orange"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>The central compound has a high silica content which ensures excellent stability at high speeds, uniform wear and good mileage.</li>
+	<br />
+	<li>The intermediate compound that covers the intermediate lean angles has a formulation of 100% Silica to provide an excellent chemical grip on dry and wet surfaces, supported by a harder compound in the substrate to guarantee stability and precision when cornering.</li>
+	<br />
+	<li>The compound on the shoulders is a 100% Carbon Black compound with high degree of hysteresis that transforms blend compression into heat, thus providing a fast warm-up. It also has a broad working temperature range, which guarantees grip and stable performance regardless of the load. This compound employs the same racing resins used in the DIABLO&trade; Supercorsa designed for use in high temperature and high stress situations typical of racetrack riding.</li>
+	<br />
+	<li>The front tyre compound was designed to work in harmony with the compound of the rear tyre which is divided into five zones with three different compounds.</li>
+	<br />
+	<li>The central compound uses 100% Silica in the centre of the tread, achieving &ldquo;chemical grip&rdquo; on both dry and wet surfaces, as well as stability under all applications, performance typically required in street and high speed applications. Wet riding is one of the most crucial functions for a front tyre and so, unlike the rear tyre, the 100% silica compound is used on the centre.</li>
+	<br />
+	<li>The compound on the shoulder is 100% Carbon Black, enabling lean angles typical of a racing product, ensuring lateral grip and strength in turns. Moreover it also provides precise feedback on corner exit, valuable features when approaching the limit both on racetrack and the road.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<div class="row">
+<div class="medium-6 columns" style="animation-delay: 0.1s; animation-name: fadeInDown;">
+<div class="row">
+<div class="small-12 columns">
+<div class="scope-jacket"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+</div>
+
+<div class="row">
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Ambience%20on%20road%20(9).jpg" /></div>
+
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Ambience%20on%20road%20(7).jpg" /></div>
+
+<div class="small-4 columns macna-thumbs"><img src="http://www.linkint.com.au/libraries/images/brand-pirelli/Ambience%20on%20road%20(11).jpg" /></div>
+</div>
+</div>
+
+<div class="medium-6 columns">
+<p class="brand-name">FEATURES</p>
+
+<p class="product-name">MULTI COMPOUND TECHNOLOGY</p>
+
+<p>&nbsp;</p>
+
+<ul class="bullets">
+	<li>Excellent stability at high speeds, uniform wear and good mileage.</li>
+	<li>Excellent chemical grip on dry and wet surfaces, stability and precision when cornering.</li>
+</ul>
+<button class="macna-cta">FIND YOUR NEAREST DEALER</button></div>
+</div>
+
+<p>&nbsp;</p>
+
+<p><br />
+<!--Macna Traction Jacket--></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="row">
+<div class="large-12 columns">
+<div class="macna-traction">
+<div class="macna-overlay">
+<p class="slider-overlay">DIABLO ROSSO CORSA II FEATURES</p>
+
+<p style="color:#D12828; margin-top:-10px;">RACING PROFILES</p>
+</div>
+</div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>The profiles of DIABLO ROSSO&trade; CORSA II derive directly from those used in racing. The profile of the front tyre features a racing-derived, multi-radius design that enhances handling, inviting the rider to lean in earlier and facilitating quick changes in direction.</p>
+
+<p>Compared to its predecessor, the DIABLO ROSSO &trade; CORSA, the profile of the new tyre is broader and wider, providing a larger, more stable contact area for the leaning motorcycle. The rear tyre follows the same pattern and similar geometry ensuring a harmonious feeling from the pair of tyres.</p>
+
+<p>The tread design:</p>
+
+<p>One of the strengths of the DIABLO ROSSO&trade; CORSA II is the tread pattern &mdash; an evolution of the DIABLO ROSSO&trade; III &mdash; optimised to provide performance similar to that of slick racetrack tyres and ensure superb control in street riding. The uninterrupted &quot;flash&quot; design is an effective solution in terms of tread compactness, full/void ratio, groove orientation and water drainage.</p>
+
+<p>DIABLO ROSSO&trade; CORSA II offers a wide slick zone on the shoulders and thus guarantees superb grip as well as precision and stability at high lean angles. Wide, interrupted grooves prevent tread deformation, enhancing overall compactness and, consequently, ensuring better, more uniform wear under both road and track conditions. The result is a highly stable tyre.</p>
+
+<p>The full/void ratios applied on front and rear tyres of the previous model have been modified and the result is greater surface in contact with the asphalt at various lean angles and thus better overall grip under all conditions.</p>
+
+<p>The central portion of the &quot;flash&quot; also increases the number of grooves on that portion of the profile used when leaning on a wet surface &mdash; in conventional road use this angle generally ranges from 10&deg; to 30&deg;. The shape of the grooves has been specially designed to achieve rapid warm-up and excellent drainage of water under wet conditions. The surface between 30&deg; and the shoulder is the area affected when leaning; here, on the DIABLO ROSSO&trade; CORSA II, the tread grooves have been progressively reduced until the area is completely slick. No grooves means no deformation and thus utmost stability.</p>
+
+<div class="row">
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-black"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-yellow"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+
+<div class="small-12 medium-4 columns">
+<div class="traction-jacket-orange"><img src="http://www.linkint.com.au/libraries/images/macna%20landing%20page/blank.png" style="visibility: hidden;" /></div>
+</div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div class="row">
+<div class="medium-6 columns" style="animation-delay: 0.1s; animation-name: fadeInDown;">
+<div class="row">
+<div class="small-6 columns round-img"><img alt="macna traction detail" src="http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(17).jpg" /></div>
+
+<div class="small-6 columns round-img"><img alt="macna traction detail" src="http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(20).jpg" /></div>
+
+<div class="small-6 columns round-img"><img alt="macna traction detail" src="http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(14).jpg" /></div>
+
+<div class="small-6 columns round-img"><img alt="macna traction detail" src="http://www.linkint.com.au/libraries/images/brand-pirelli/Action%20on%20track%20(26).jpg" /></div>
+</div>
+</div>
+
+<div class="medium-6 columns" style="margin-top: 20px;">
+<p class="brand-name">Structure</p>
+
+<p class="product-name">derived from racing</p>
+
+<p>The solutions adopted for the compound, tread and new profile, significantly improve grip and traction, making significantly higher speeds possible in lean. However, this means that the tyres are required to absorb greater dynamic forces and hence greater stresses. To address this, Pirelli employed a new structure - derived from racing - but with slightly higher structural rigidity in comparison to its predecessor so as to adapt perfectly to the stresses without forfeiting comfort.</p>
+<button class="macna-cta">FIND YOUR NEAREST DEALER</button></div>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>To achieve the full potential of DIABLO ROSSO&trade; CORSA II, a high-modulus Lyocell fibre casing was adopted for the rear tyre, a casing with a significantly lower deformation ratio than that of the fibres normally used in street tyres. The high-modulus Lyocell fibre casing is an exclusive, patented Pirelli technology developed through the company&#39;s participation in the FIM Superbike World Championship.</p>
+
+<p>The result is a carcass that can better withstand the stresses generated when aggressively entering a corner or when accelerating sharply while the motorcycle is still leaning. The new casing also responds perfectly to roughness in the asphalt, ensuring a good degree of comfort and helps latest generation motorcycles achieve better performance when the rider shifts their weight between front and rear, a characteristic more evident at greater lean angles.</p>
+
+<p>The radial casing offers a good degree of stiffness also for the front tyre, supporting the profile and enabling the blend to achieve superb grip on the asphalt. It is made of high performance Rayon, which maintains shape even under the stresses generated by acceleration forces and full loads.</p>
+
+<p>The combination of front and rear structures works optimally with the latest electronic control systems, ensuring the best performance and delivering higher level of confidence and control to the rider.</p>
+
+<p><iframe allowfullscreen="" frameborder="0" height="360" mozallowfullscreen="" src="https://player.vimeo.com/video/268888844" webkitallowfullscreen="" width="640"></iframe></p>
+
+<p><a href="https://vimeo.com/268888844">Pirelli Diablo Rosso Corsa II - Technical Video</a> from <a href="https://vimeo.com/linkinternational">Link International</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<p>&nbsp;</p>
+
+<p><iframe allowfullscreen="" frameborder="0" height="360" mozallowfullscreen="" src="https://player.vimeo.com/video/268889355" webkitallowfullscreen="" width="640"></iframe></p>
+
+<p><a href="https://vimeo.com/268889355">Pirelli Rosso Corsa II - Product Video</a> from <a href="https://vimeo.com/linkinternational">Link International</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
