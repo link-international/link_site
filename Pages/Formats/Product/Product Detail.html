@@ -6,8 +6,6 @@
 			<div class="row">
 				<div class="prode-data-points small-12 large-12 columns">
 					<h3 class="always-h3">$_P_DescriptionHolder$</h3>
-					<div class="addthis_native_toolbox"></div>
-					<h4>$SES_locale_currency_symbol$$combinations_item_price$ $_P_Unit$</h4>
 
 					<table class="prode-data-table">
 						<tr>
@@ -16,10 +14,10 @@
 						</tr>
 						<tr>
 							<td><strong>Stock:</strong></td>
-							<td class="prode-stock-$_P_StockLevel$">
+							<td id="$product_stock_level_element_id$" class="prode-stock-$_P_StockLevel$ $product_stock_level_class$">
 								<span class="prode-stock-text-high">In stock</span>
 								<span class="prode-stock-text-low">Stock is running low, get in quick.</span>
-								<span class="prode-stock-text-none">It looks like we're out. Contact us to find out next stock availability.</span>
+								<span class="prode-stock-text-none">Contact us to find out stock availability.</span>
 							</td>
 						</tr>
 <!--
@@ -35,6 +33,112 @@
 						</tr>
 -->
 					</table>
+					
+					<h4>$SES_locale_currency_symbol$$combinations_item_price$ $_P_Unit$</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="show-for-small-only">
+	<div class="small-12 medium-5 columns">
+		<div class="image-placeholder">
+        	<div class="image-placeholder-img">$productImage_placeholder$</div>
+        	$productImage_list$
+    	</div>
+    	<p class="prode-illustration"><small>Product image for illustration purposes only.</small></p>	
+	</div>
+	
+	<!-- This is the main info, item name, part no, price, etc -->
+	<div class="small-12 large-12 columns">
+		<div class="prode-data-placeholder">
+			<div class="row">
+				<div class="combo-display prode-data-points small-12 columns">
+					<h4 class="prode-header">Options &nbsp;<i class="fa fa-cogs"></i></h4>
+					<div class="prode-combo-box">
+						$combinations_table$$combination_selection_label$
+					</div>
+				</div>
+				
+				<div class="combo-display hide-for-large-up small-12 columns">
+					<hr>
+				</div>
+				
+				<div class="small-12 columns">
+					<h4 class="prode-header">Information & Specifications &nbsp;<i class="fa fa-info-circle"></i></h4>
+					<div>
+						$_P_Description2Holder$
+					</div>
+				</div>
+				
+				<div class="small-12 columns">
+					$_P_Description3Holder$
+				</div>
+            	<div class="small-12 columns">
+					$_P_Description4Holder$
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style type="text/css">
+	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
+		display: inline; 
+	} 
+	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
+		display: none; 
+	}
+.product_stock_level_high span, .product_stock_level_low span, .product_stock_level_none span{
+        display: none;
+}
+.product_stock_level_high .prode-stock-text-high, .product_stock_level_low .prode-stock-text-low, .product_stock_level_none .prode-stock-text-none{
+        display: inline;
+}
+</style>
+
+
+<!----------------------------------->
+
+
+
+<hr>
+<div class="row">
+	<!-- This is the image box -->
+	<div class="small-12 medium-7 columns">
+		<div class="prode-data-placeholder">
+			<div class="row">
+				<div class="prode-data-points small-12 large-12 columns">
+					<h3 class="always-h3">$_P_DescriptionHolder$</h3>
+
+					<table class="prode-data-table">
+						<tr>
+							<td><strong>Part No:</strong></td>
+							<td class="prode-itemID">$_P_ItemIDHolder$</td>
+						</tr>
+						<tr>
+							<td><strong>Stock:</strong></td>
+							<td class="prode-stock-$_P_StockLevel$" id="$product_stock_level_element_id$">
+								<span class="prode-stock-text-high">In stock</span>
+								<span class="prode-stock-text-low">Stock is running low, get in quick.</span>
+								<span class="prode-stock-text-none">Contact us to find out stock availability.</span>
+							</td>
+						</tr>
+<!--
+						<tr>
+							<td colspan="2">
+								<div class="prode-add-to-cart">
+										<div id="$favourites_product_wrapper_element_id$" class="$favourites_product_class$"> 
+											<a href="#" class="add_favourite_btn" onclick="$favourites_product_add_onclick$ return false;"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 
+											<a href="#" class="remove_favourite_btn" onclick="$favourites_product_remove_onclick$ return false;"><i class="fa fa-heart" aria-hidden="true"></i></a> 
+										</div>
+								</div>
+							</td>
+						</tr>
+-->
+					</table>
+					
+					<h4>For pricing please contact your <a href="http://linkint.com.au/dealer-locator.html">nearest dealer</a>.</h4>
+					
 				</div>
 			</div>
 		</div>
@@ -43,99 +147,15 @@
 	<div class="small-12 medium-5 columns">
 		<div class="image-placeholder">
 			<div class="image-placeholder-img">$productImage_placeholder$</div>
-			<div class="image-thumbnails">$productImage_list$</div>
-		</div>
-	</div>
-	
-	<!-- This is the main info, item name, part no, price, etc -->
-	<div class="small-12 large-12 columns">
-		<div class="prode-data-placeholder">
-			<div class="row">
-				<div class="combo-display prode-data-points small-12 columns">
-					<h4 class="prode-header">Options &nbsp;<i class="fa fa-cogs"></i></h4>
-					<div class="prode-combo-box">
-						$combinations_table$$combination_selection_label$
-					</div>
-				</div>
-				
-				<div class="combo-display hide-for-large-up small-12 columns">
-					<hr>
-				</div>
-				
-				<div class="small-12 columns">
-					<h4 class="prode-header">Information & Specifications &nbsp;<i class="fa fa-info-circle"></i></h4>
-					<div>
-						$_P_Description2Holder$
-					</div>
-				</div>
-				
-				<div class="small-12 columns">
-					$_P_Description3$
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<style type="text/css">
-	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
-		display: inline; 
-	} 
-	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
-		display: none; 
-	}
-</style>
-
-<!----------------------------------->
-
-
-
-<div class="row">
-	<!-- This is the image box -->
-	<div class="small-12 large-12 columns">
-		<div class="image-placeholder">
-			<p class="prode-zoom hide-for-small"><i class="fa fa-search-plus"></i> You can zoom in by clicking the image below.</p>
-			<div class="image-placeholder-img">$productImage_placeholder$</div>
 			$productImage_list$
-			<p class="prode-illustration"><small>Product image for illustration purposes only.</small></p>
 		</div>
+    <p class="prode-illustration"><small>Product image for illustration purposes only.</small></p>	
 	</div>
 	
 	<!-- This is the main info, item name, part no, price, etc -->
 	<div class="small-12 large-12 columns">
 		<div class="prode-data-placeholder">
 			<div class="row">
-				<div class="prode-data-points small-12 large-12 columns">
-					<h3 class="always-h3">$_P_DescriptionHolder$</h3>
-					<div class="addthis_native_toolbox"></div>
-					<h4>$SES_locale_currency_symbol$$combinations_item_price$ $_P_Unit$</h4>
-
-					<table class="prode-data-table">
-						<tr>
-							<td><strong>Part No:</strong></td>
-							<td class="prode-itemID">$_P_ItemIDHolder$</td>
-						</tr>
-						<tr>
-							<td><strong>Stock:</strong></td>
-							<td class="prode-stock-$_P_StockLevel$">
-								<span class="prode-stock-text-high">In stock</span>
-								<span class="prode-stock-text-low">Stock is running low, get in quick.</span>
-								<span class="prode-stock-text-none">It looks like we're out. Contact us to find out next stock availability.</span>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<div class="prode-add-to-cart">
-										<div id="$favourites_product_wrapper_element_id$" class="$favourites_product_class$"> 
-											<a href="#" class="add_favourite_btn" onclick="$favourites_product_add_onclick$ return false;"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 
-											<a href="#" class="remove_favourite_btn" onclick="$favourites_product_remove_onclick$ return false;"><i class="fa fa-heart" aria-hidden="true"></i></a> 
-										</div>
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-				
 				<div class="combo-display prode-data-points small-12 columns">
 					<h4 class="prode-header">Options &nbsp;<i class="fa fa-cogs"></i></h4>
 					<div class="prode-combo-box">
@@ -155,121 +175,21 @@
 				</div>
 				
 				<div class="small-12 columns">
-					$_P_Description3$
+					$_P_Description3Holder$
 				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<style type="text/css">
-	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
-		display: inline; 
-	} 
-	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
-		display: none; 
-	}
-</style>
-	
-	
-	
-	
-		
-
-
-
-
-		
-		
-			<ul class="tabs" data-tab>
-				<li class="tab-title active"><a href="#infoPanel">
-					<i class="fa fa-info-circle"></i>&nbsp; INFORMATION</a>
-				</li>
-				<li class="tab-title">
-					<a href="#techPanel"><i class="fa fa-wrench"></i>&nbsp; FITMENT</a>
-				</li>
-<!--				<li class="tab-title"><a href="#panel2"><i class="fa fa-wrench"></i>&nbsp; FITMENT</a></li>-->
-			</ul>
-			<div class="tabs-content">
-				<div class="content active" id="infoPanel">
-					$_P_Description2Holder$<br />
-					<a href="#" data-reveal-id="fitmentModal">What does this fit?</a>
-				</div>
-<!--
-				<div class="content" id="panel2">
-					<iframe style="width:100%;min-height:600px;overflow:hidden;border: none;" scrolling="no" src="http://www.linkint.com.au/fitment/$_P_ItemID$_item.html"></iframe>
-				</div>
--->
-				<div id="fitmentModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-					<iframe style="width:100%;min-height:600px;overflow:hidden;border: none;" scrolling="no" src="http://www.linkint.com.au/fitment/$_P_ItemID$_item.html"></iframe>
-					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!-- OLD -->
-<div class="row">
-	<div class="small-12 large-8 columns">
-		<div class="image-placeholder">
-			$productImage_placeholder$
-			<p class="illustration"><small>Product image for illustration purposes only.</small></p>
-		</div>
-	</div>
-
-	<div class="small-12 large-4 columns">
-		<div class="data-placeholder">
-			<h4>$_P_NameHolder$</h4>
-			<ul>
-				<li><i class="fa fa-cog"></i> $_P_ItemIDHolder$</li>
-				<li>
-					<span class="stock-$_P_StockLevel$">
-						<div class="high-box">
-							<i class="fa fa-cubes"></i> HIGH STOCK
-						</div>
-						<div class="low-box">
-							<i class="fa fa-cube"></i> LOW STOCK
-						</div>
-						<div class="none-box">
-							<i class="fa fa-times"></i> NO STOCK
-						</div>
-					</span>
-				</li>
-				<li><strong>$SES_locale_currency_symbol$$combinations_item_price$</strong> <small>$_P_Unit$</small></li>
-			</ul>
-			<hr>
-			<ul>
-				<li>$addProductQuantityField$ <a class="button tiny" href="#" data-reveal-id="modal$_P_Image_Filename$" style="margin-bottom: 0px;">Add <i class="fa fa-shopping-cart"></i></a></li>
-			</ul>
-			<hr>
-		</div>
-	</div>
-	<div class="small-12 large-12 columns">
-		<div class="description-placeholder">
-			<ul class="tabs" data-tab>
-				<li class="tab-title active"><a href="#panel1"><i class="fa fa-info-circle"></i>&nbsp; INFORMATION</a></li>
-				<li class="tab-title"><a href="#panel2"><i class="fa fa-wrench"></i>&nbsp; FITMENT</a></li>
-			</ul>
-			<div class="tabs-content">
-				<div class="content active" id="panel1">
-					$_P_DescriptionHolder$<br />
-					$_P_Description2Holder$<br />
-					$_P_Description3Holder$<br />
+            	<div class="small-12 columns">
 					$_P_Description4Holder$
 				</div>
-				<div class="content" id="panel2">
-				<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
-
-				<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-					<iframe style="width:100%;min-height:600px;overflow:hidden;border: none;" scrolling="no" src="http://www.linkint.com.au/fitment/$_P_ItemID$_item.html"></iframe>
-					<a class="close-reveal-modal" aria-label="Close">&#215;</a>
-				</div>
-				
-					<iframe style="width:100%;min-height:600px;overflow:hidden;border: none;" scrolling="no" src="http://www.linkint.com.au/fitment/$_P_ItemID$_item.html"></iframe>
-				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<style type="text/css">
+	.product_favourite_N .add_favourite_btn, .product_favourite_Y .remove_favourite_btn{ 
+		display: inline; 
+	} 
+	.product_favourite_Y .add_favourite_btn, .product_favourite_N .remove_favourite_btn{ 
+		display: none; 
+	}
+</style>
